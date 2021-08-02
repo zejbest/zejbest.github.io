@@ -13,13 +13,13 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="HEXO博客安装教程1、安装npm和cnpm工具前往node.js官网下载并安装工具  1npm -v   #安装完毕之后，使用这个命令查看版本号  因为npm使用的是国外的员，速度较慢，因此安装淘宝npm(cnpm) 12npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.orgcnpm -v  #如果安装正常，会显示版本信息">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="c:/Users/zejbest/AppData/Roaming/Typora/typora-user-images/image-20210802100421243.png">
-<meta property="og:image" content="c:/Users/zejbest/AppData/Roaming/Typora/typora-user-images/image-20210802102358650.png">
+<meta property="og:image" content="d:/hexo/source_posts/image-20210802100421243.png">
+<meta property="og:image" content="d:/hexo/source_posts/image-20210802102358650.png">
 <meta property="article:published_time" content="2021-08-02T02:26:00.000Z">
-<meta property="article:modified_time" content="2021-08-02T02:28:06.594Z">
+<meta property="article:modified_time" content="2021-08-02T07:59:15.414Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="c:/Users/zejbest/AppData/Roaming/Typora/typora-user-images/image-20210802100421243.png">
+<meta name="twitter:image" content="d:/hexo/source_posts/image-20210802100421243.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -99,7 +99,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <h2 id="HEXO博客安装教程"><a href="#HEXO博客安装教程" class="headerlink" title="HEXO博客安装教程"></a>HEXO博客安装教程</h2><h3 id="1、安装npm和cnpm工具"><a href="#1、安装npm和cnpm工具" class="headerlink" title="1、安装npm和cnpm工具"></a>1、安装npm和cnpm工具</h3><p>前往<a target="_blank" rel="noopener" href="http://nodejs.cn/download/">node.js官网</a>下载并安装工具</p>
-<p><img src="C:\Users\zejbest\AppData\Roaming\Typora\typora-user-images\image-20210802100421243.png" alt="image-20210802100421243"></p>
+<p><img src="D:\hexo\source_posts\image-20210802100421243.png" alt="image-20210802100421243"></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v   #安装完毕之后，使用这个命令查看版本号</span><br></pre></td></tr></table></figure>
 
 <p>因为npm使用的是国外的员，速度较慢，因此安装淘宝npm(cnpm)</p>
@@ -107,19 +107,33 @@
 
 
 
-<h3 id="2、安装和配置HEXO"><a href="#2、安装和配置HEXO" class="headerlink" title="2、安装和配置HEXO"></a>2、安装和配置HEXO</h3><p>前提条件是安装了git，如果没有安装请下载git并安装</p>
+<h3 id="2、安装和配置HEXO"><a href="#2、安装和配置HEXO" class="headerlink" title="2、安装和配置HEXO"></a>2、安装和配置HEXO</h3><h4 id="（1）安装hexo-cli"><a href="#（1）安装hexo-cli" class="headerlink" title="（1）安装hexo-cli"></a>（1）安装hexo-cli</h4><p>前提条件是安装了git，如果没有安装请下载git并安装</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli  #通过cnpm安装hexo</span><br></pre></td></tr></table></figure>
 
-<p>假设你的hexo网站根目录打算放在D:</p>
+<h4 id="（2）创建目录并初始化和启动"><a href="#（2）创建目录并初始化和启动" class="headerlink" title="（2）创建目录并初始化和启动"></a>（2）创建目录并初始化和启动</h4><p>假设你的hexo网站根目录打算放在D:</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#用管理员打开<span class="built_in">cmd</span></span><br><span class="line"><span class="built_in">cd</span> d:		#切换打D盘</span><br><span class="line"><span class="built_in">mkdir</span> hexo	#新建一个hexo的文件夹</span><br><span class="line"><span class="built_in">cd</span> hexo		#进入hexo文件夹</span><br><span class="line">hexo init	#hexo初始化</span><br><span class="line">hexo s		#启动hexo</span><br><span class="line">#ctrl + c  进行退出</span><br></pre></td></tr></table></figure>
 
 <p>这个时候你就能通过<a href="http://localhost:4000这个地址打开本地页面">http://localhost:4000这个地址打开本地页面</a></p>
-<p><img src="C:\Users\zejbest\AppData\Roaming\Typora\typora-user-images\image-20210802102358650.png" alt="image-20210802102358650"></p>
-<p>现在让我们来新建一个页面吧</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo n &quot;HEXO博客安装教程&quot;</span><br></pre></td></tr></table></figure>
+<p><img src="D:\hexo\source_posts\image-20210802102358650.png" alt="image-20210802102358650"></p>
+<h4 id="（3）现在让我们来新建一个页面吧"><a href="#（3）现在让我们来新建一个页面吧" class="headerlink" title="（3）现在让我们来新建一个页面吧"></a>（3）现在让我们来新建一个页面吧</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo n &quot;HEXO博客安装教程&quot;</span><br></pre></td></tr></table></figure>
 
 <p>然后进入hexo\source_posts目录下就能发现新建了一个“HEXO博客安装教程.md”文件</p>
 <p>可以通过编辑这个markdown文件来编辑这个网页</p>
+<h4 id="（4）推送到git网站"><a href="#（4）推送到git网站" class="headerlink" title="（4）推送到git网站"></a>（4）推送到git网站</h4><p>接下来安装git发布组建</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install --save hexo-deployer-git  #安装插件</span><br></pre></td></tr></table></figure>
+
+
+
+<p>在git上新建一个和自己账号相同的的仓库</p>
+<p>比如zejbest.github.io，<a target="_blank" rel="noopener" href="https://zejbest.github.io/%E4%B9%9F%E6%98%AF%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BF%E9%97%AE%E5%9C%B0%E5%9D%80%E3%80%82">https://zejbest.github.io/也是网站的访问地址。</a></p>
+<p>编辑_config.yml，在最底部添加如下内容</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/zejbest/zejbest.github.io.git</span><br><span class="line">  branch: master</span><br><span class="line">  </span><br><span class="line">  #type:连接的类型</span><br><span class="line">  #repo:推送到那个仓库</span><br><span class="line">  #branch：推送到那个分支</span><br></pre></td></tr></table></figure>
+
+<p>发布网页</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d   #进行发布</span><br></pre></td></tr></table></figure>
+
+<p>需要输入git的账号和密码</p>
+<p>最后通过<a target="_blank" rel="noopener" href="https://zejbest.github.io/%E8%BF%99%E4%B8%AA%E5%9C%B0%E5%9D%80%E5%B0%B1%E8%83%BD%E8%AE%BF%E9%97%AE%E4%BA%86%E3%80%82">https://zejbest.github.io/这个地址就能访问了。</a></p>
 
       
     </div>
